@@ -4,8 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签: English, Hexo">
-    <meta name="description" content="Hexo">
+    <meta name="keywords" content="算法设计与分析, Hexo">
+    <meta name="description" content="第一章 基础知识1.1 算法的基本概念问题
+需要回答的一般性提问，通常含有若干参数
+需要说明参数的含义和解满足的条件
+对参数进行赋值则得到问题的一个实例
+
+
+算法
+由有限条指令构成  
+每条指令规定了计算机所要执行的有限次运算或者操作 
+指">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +26,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签: English | Hexo</title>
+    <title>算法设计与分析 | Hexo</title>
     <link rel="icon" type="image/png" href="/tothenorth.github.io/favicon.png">
     
     <style>
@@ -339,169 +348,566 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                全员非光滑工作室
-                
-            </div>
+    
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/tothenorth.github.io/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: false,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/tothenorth.github.io/medias/featureimages/23.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">算法设计与分析</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tothenorth.github.io/tags/Algorithm/">
+                                <span class="chip bg-color">Algorithm</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/tothenorth.github.io/categories/Algorithm/" class="post-category">
+                                Algorithm
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-01-10
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="第一章-基础知识"><a href="#第一章-基础知识" class="headerlink" title="第一章 基础知识"></a>第一章 基础知识</h1><h2 id="1-1-算法的基本概念"><a href="#1-1-算法的基本概念" class="headerlink" title="1.1 算法的基本概念"></a>1.1 算法的基本概念</h2><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a><strong>问题</strong></h3><ul>
+<li>需要回答的一般性提问，通常含有若干参数</li>
+<li>需要说明参数的含义和解满足的条件</li>
+<li>对参数进行赋值则得到问题的一个实例</li>
+</ul>
+<hr>
+<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a><strong>算法</strong></h3><ul>
+<li>由有限条指令构成  </li>
+<li>每条指令规定了计算机所要执行的有限次运算或者操作 </li>
+<li>指令序列确定了解决某个问题的运算或操作的步骤</li>
+<li>算法A解问题P：问题P的任何势力作为算法A的输入，A能够在有限步停机并输出问题的正确解</li>
+</ul>
+<hr>
+<p>是否存在更有效的算法？ 涉及对问题难度的界定。<br>问题本质上的难解性？ NP完全性理论，”P&#x3D;NP?”  </p>
+<hr>
+<h3 id="算法的时间复杂度"><a href="#算法的时间复杂度" class="headerlink" title="算法的时间复杂度"></a><strong>算法的时间复杂度</strong></h3><p>算法的时间复杂度是对算法效率的度量<br>针对问题选择基本运算，用基本运算次数表示算法的效率  </p>
+<p>两个问题：  </p>
+<ul>
+<li>运算次数与实例规模有关<ul>
+<li>算法的时间复杂度函数</li>
+</ul>
+</li>
+<li>规模相同时，运算次数与实例的情况有关<ul>
+<li>最坏情况下的时间复杂度<em><strong>W</strong></em>(n)</li>
+<li>平均情况下的时间复杂度<em><strong>A</strong></em>(n)</li>
+</ul>
+</li>
+</ul>
+<p>什么算法在实践中是可以接受的算法？<br>考察算法在是不是多项式时间的：<br>在最坏情况下，算法的时间复杂度函数在n充分大时以<em><strong>P</strong></em>(n)为上界的算法，<em><strong>P</strong></em>(n)是n的多项式。  </p>
+<p><strong>可求解问题的划分：</strong></p>
+<ul>
+<li>多项式时间可解的问题</li>
+<li>难解的问题</li>
+</ul>
+<hr>
+<h2 id="1-2-算法的伪码描述"><a href="#1-2-算法的伪码描述" class="headerlink" title="1.2 算法的伪码描述"></a>1.2 算法的伪码描述</h2><p>用伪码描述算法，伪码由带标号的指令构成  </p>
+<ul>
+<li>赋值语句：&lt;-</li>
+<li>分支语句：if…then…[else …]  </li>
+<li>循环语句：while，for，repeat until  </li>
+<li>转向语句：goto  </li>
+<li>输出语句：return  </li>
+<li>调用</li>
+<li>注释：&#x2F;&#x2F;</li>
+</ul>
+<hr>
+<h2 id="1-3-算法的数学基础"><a href="#1-3-算法的数学基础" class="headerlink" title="1.3 算法的数学基础"></a>1.3 算法的数学基础</h2><h3 id="1-3-1-函数渐进的界"><a href="#1-3-1-函数渐进的界" class="headerlink" title="1.3.1 函数渐进的界"></a>1.3.1 函数渐进的界</h3><p><strong>定义1.1</strong><br>设 <em>f</em> 和 <em>g</em> 是定义域为自然数集<strong>N</strong>上的函数。  </p>
+<ul>
+<li>若存在正数c和n_0使得对一切n&gt;&#x3D;$n_0$有0&lt;&#x3D;<em>f</em>(n)&lt;&#x3D;c<em>g</em>(n)成立，则称<em>f</em>(n)的渐进上界为<em>g</em>(n),记作<em>f</em>(n)&#x3D;<em>O</em>(<em>g</em>(n)).</li>
+<li>若存在正数c和n_0使得对一切n&gt;&#x3D;$n_0$有0&lt;&#x3D;c<em>g</em>(n)&lt;&#x3D;<em>f</em>(n)成立，则称<em>f</em>(n)的渐进下界为<em>g</em>(n),记作<em>f</em>(n)&#x3D;$\Omega$(<em>g</em>(n)).  </li>
+<li>若存在正数c和n_0使得对一切n&gt;&#x3D;$n_0$有0&lt;&#x3D;<em>f</em>(n)&lt; c<em>g</em>(n)成立，则称<em>f</em>(n)的渐进上界为<em>g</em>(n),记作<em>f</em>(n)&#x3D;<em>o</em>(<em>g</em>(n)).  </li>
+<li>若存在正数c和n_0使得对一切n&gt;&#x3D;$n_0$有0&lt;&#x3D;c<em>g</em>(n)&lt; <em>f</em>(n)成立，则称<em>f</em>(n)的渐进下界为<em>g</em>(n),记作<em>f</em>(n)&#x3D;$\omega$(<em>g</em>(n)).</li>
+<li>若<em>f</em>(n)&#x3D;<em>O</em>(<em>g</em>(n))且<em>f</em>(n)&#x3D;$\Omega$(<em>g</em>(n)),则记作<em>f</em>(n)&#x3D;$\Theta$(<em>g</em>(n)).  此时也城<em>g</em>(n)是<em>f</em>(n)的渐进的紧的界，或者称<em>f</em>(n)的阶是<em>g</em>(n).此时<em>f</em>(n)与<em>g</em>(n)的阶相等.</li>
+</ul>
+<p><em>O</em>(1)表示常数函数  </p>
+<p><strong>定理1.1</strong><br>设 <em>f</em> 和 <em>g</em> 是定义域为自然数集<strong>N</strong>上的函数。</p>
+<ul>
+<li><p>如果$\lim_{n\rightarrow+\infty}\frac{f(n)}{g(n)}$存在，并且等于某个常数c&gt;0,那么<em>f</em>(n)&#x3D;$\Theta$(<em>g</em>(n)).  </p>
+</li>
+<li><p>如果$\lim_{n\rightarrow+\infty}\frac{f(n)}{g(n)}$&#x3D;0,那么<em>f</em>(n)&#x3D;<em>o</em>(<em>g</em>(n)).  </p>
+</li>
+<li><p>如果$\lim_{n\rightarrow+\infty}\frac{f(n)}{g(n)}$&#x3D;$+\infty$,那么<em>f</em>(n)&#x3D;$\omega$(<em>g</em>(n)).</p>
+</li>
+</ul>
+<p><strong>定理1.2</strong><br>设 <em>f</em> ，<em>g</em> ，<em>h</em> 是定义域为自然数集合的函数，  </p>
+<ul>
+<li>如果 <em>f</em>&#x3D;<em>O</em>(<em>g</em>)且 <em>g</em>&#x3D;<em>O</em>(<em>h</em>),那么 <em>f</em>&#x3D;<em>O</em>(<em>h</em>).</li>
+<li>如果 <em>f</em>&#x3D;$\Omega$(<em>g</em>)且 <em>g</em>&#x3D;$\Omega$(<em>h</em>),那么 <em>f</em>&#x3D;$\Omega$(<em>h</em>).</li>
+<li>如果 <em>f</em>&#x3D;$\Theta$(<em>g</em>)且 <em>g</em>&#x3D;$\Theta$(<em>h</em>),那么 <em>f</em>&#x3D;$\Theta$(<em>h</em>).</li>
+</ul>
+<p><strong>定理1.3</strong><br>假设 <em>f</em> 和 <em>g</em> 是定义域为自然数集合的函数，若对某个其他的函数 <em>h</em>有 <em>f</em>&#x3D;<em>O</em>(<em>h</em>)和 <em>g</em>&#x3D;<em>O</em>(<em>h</em>),那么<em>f</em>+<em>g</em>&#x3D;<em>O</em>(<em>h</em>).</p>
+<p><strong>推论</strong><br>假设 <em>f</em> 和 <em>g</em> 是定义域为自然数集合的函数，且满足 <em>g</em>&#x3D;<em>O</em>(<em>f</em>),那么 <em>f</em>+<em>g</em>&#x3D;$\Theta$(<em>f</em>).  </p>
+<hr>
+<h4 id="多项式函数"><a href="#多项式函数" class="headerlink" title="多项式函数"></a><strong>多项式函数</strong></h4><p>d次多项式函数 <em>f</em>(n)&#x3D;$\Theta$($n^d$)<br>ps: <em>O</em>($nlogn$)也是多项式时间的  </p>
+<hr>
+<h4 id="对数函数"><a href="#对数函数" class="headerlink" title="对数函数"></a><strong>对数函数</strong></h4><p>对数运算满足<br>$a^{log_bn}$ &#x3D; $n^{log_ba}$<br>该等式说明某些函数表面上n处在指数位置，但仍是多项式函数。<br>对数函数增长非常慢，任何幂函数($\alpha$&gt;0)的阶都比对数函数(<em>b</em>&gt;1)的阶高。</p>
+<p><strong>定理1.4</strong><br>对每一个<em>b</em>&gt;1和每个$\alpha$&gt;0,有 $log_bn$&#x3D;<em>o</em>($n^{\alpha}$).  </p>
+<p>对数函数的另一条性质是换底公式  </p>
+<p>$log_an$&#x3D;$\frac{log_bn}{log_ba}$  </p>
+<p>根据此性质可知，$log_an$&#x3D;$\Theta$($log_bn$).  </p>
+<hr>
+<h4 id="指数函数"><a href="#指数函数" class="headerlink" title="指数函数"></a><strong>指数函数</strong></h4><p><strong>定理1.5</strong><br>对每个<em>r</em>&gt;1和每个<em>d</em>&gt;0,有$n^d$&#x3D;<em>o</em>($r^n$).  </p>
+<hr>
+<h4 id="阶乘函数"><a href="#阶乘函数" class="headerlink" title="阶乘函数"></a><strong>阶乘函数</strong></h4><p>Stirling公式<br>n!&#x3D;$\sqrt{2\pi n}$ $(\frac{n}{e})^n$(1+$\Theta(\frac{1}{n})$)  </p>
+<p>关于阶乘函数有下面的结果  </p>
+<ul>
+<li>n!&#x3D;<em>o</em>($n^n$) </li>
+<li>n!&#x3D;$\omega$($2^n$)  </li>
+<li>$log(n!)$&#x3D;$\Theta$($nlog(n)$)</li>
+</ul>
+<hr>
+<h3 id="1-3-2-求和的方法"><a href="#1-3-2-求和的方法" class="headerlink" title="1.3.2 求和的方法"></a>1.3.2 求和的方法</h3><p>算法分析中如果遇到循环，经常需要对循环中各次迭代的运算次数求和，这就用到的序列求和的方法。<br>常见的序列是</p>
+<ul>
+<li>等差级数  </li>
+<li>等比级数  </li>
+<li>调和级数<ul>
+<li>$\sum_{k&#x3D;1}^n \frac{1}{k}$ &#x3D; $lnn$ + <em>O</em>(1)</li>
+</ul>
+</li>
+</ul>
+<p>对于有些求和公式，求不出精确的值，但可以估计和式的上界  </p>
+<ul>
+<li>放大法<ul>
+<li>用序列中的最大项代替序列中的每个项 </li>
+<li>等比级数，假设存在常数r&lt;1,使得$a_{k+1}-a_k \leq r$对一切$k\ge r$成立</li>
+</ul>
+</li>
+<li>积分法<ul>
+<li>调和级数的和可以用积分作为它的渐进的界<br>  上下界积分分别是<blockquote>
+<p>下界：$ln{(n+1)}$<br>上界：$lnn+1$</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="1-3-3-递归方程求解方法"><a href="#1-3-3-递归方程求解方法" class="headerlink" title="1.3.3 递归方程求解方法"></a>1.3.3 递归方程求解方法</h3><p>递归算法的分析离不开递归方程的求解  </p>
+<p><strong>定义1.2</strong><br>设序列$a_0,a_1,…，a_n,…,$简记为{${a_n}$},一个把$a_n$与某些个$a_i$联系起来的等式叫做关于序列{$a_n$}的<strong>递推方程</strong>.  </p>
+<p>方法：  </p>
+<ul>
+<li>迭代归纳法，适用于一阶的递推方程  </li>
+<li>二阶以上需要进行化简，然后再进行迭代</li>
+</ul>
+<h4 id="递归树"><a href="#递归树" class="headerlink" title="递归树"></a><strong>递归树</strong></h4><p>&amp;emsp;&amp;emsp;递归树是一颗节点带权的二叉树，初始的递归树只有一个节点，权标记为<em>W</em>(n).然后不断进行迭代，直到树中不再含有权为函数的节点位置.迭代过程中，全部节点的权值之和不变，总是等于函数<em>W</em>(n).  </p>
+<p>&amp;emsp;&amp;emsp;估算递推方程解的阶，也可以使用尝试的方法.  </p>
+<p><strong>定理1.6 主定理(MasterTheorem)</strong><br>&amp;emsp;&amp;emsp;设 $a\geq1$ ,$b&gt;1$为常数，<em>f</em>(n)为函数，<em>T</em>(n)为非负整数，且<br>&amp;emsp;&amp;emsp;&amp;emsp;$T(n) &#x3D; aT(n&#x2F;b) + f(n)$<br>则有以下结果：  </p>
+<ul>
+<li>若$f(n)&#x3D;O(n^{log_ba-\varepsilon}),\varepsilon&gt;0,$那么$T(n)&#x3D;\Theta(n^{log_ba})$  </li>
+<li>若$f(n)&#x3D;\Theta(n^{log_ba}),$那么$T(n)&#x3D;\Theta(n^{log_ba}logn)$  </li>
+<li>若$f(n)&#x3D;\Omega(n^{log_ba+\varepsilon}),\varepsilon&gt;0,$且对某个常数$c&lt;1$和所以充分大的$n$有$af(n&#x2F;b)\leq cf(n),$那么$T(n)&#x3D;\Theta(f(n))$</li>
+</ul>
+<hr>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/tothenorth.github.io/about" rel="external nofollow noreferrer">zlz</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://zlzqiushui.github.io/tothenorth.github.io/tothenorth.github.io/2023/01/10/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/">https://zlzqiushui.github.io/tothenorth.github.io/tothenorth.github.io/2023/01/10/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/tothenorth.github.io/about" target="_blank">zlz</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tothenorth.github.io/tags/Algorithm/">
+                                    <span class="chip bg-color">Algorithm</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/tothenorth.github.io/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/tothenorth.github.io/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/tothenorth.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/tothenorth.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/tothenorth.github.io/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $(function () {
+        $('.tabs').tabs();
+    });
 </script>
 
-
-    </div>
-</div>
-
-<main class="content">
-
-    
-
-<div id="tags" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
-            </div>
-            <div class="tag-chips">
-                
-                
-                <a href="/tothenorth.github.io/tags/English/" title="English: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="English" style="background-color: #F9EBEA;">English
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tothenorth.github.io/tags/poetry/" title="poetry: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="poetry" style="background-color: #F5EEF8;">poetry
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tothenorth.github.io/tags/Algorithm/" title="Algorithm: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Algorithm" style="background-color: #D5F5E3;">Algorithm
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-            </div>
+            
         </div>
     </div>
-</div>
 
     
 
-    <article id="articles" class="container articles">
-        <div class="row tags-posts">
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="English" data-aos="fade-up">
-                <div class="card">
-                    <a href="/tothenorth.github.io/2023/01/10/CET6%E4%B9%B1%E5%BA%8F%E7%89%88/">
-                        <div class="card-image tag-image">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/tothenorth.github.io/2023/01/10/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/tothenorth.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="算法设计与分析">
+                        
+                        <span class="card-title">算法设计与分析</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
                             
-                            
-                            <img src="/tothenorth.github.io/medias/featureimages/22.jpg" class="responsive-img" alt="CET6乱序版">
-                            
-                            <span class="card-title">CET6乱序版</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
+                        
+                    </div>
+                    <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2023-01-10
                             </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/tothenorth.github.io/categories/English/" class="post-category">
-                                English
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/tothenorth.github.io/categories/Algorithm/" class="post-category">
+                                    Algorithm
                                 </a>
-                                
-                                
-                            </span>
-                        </div>
+                            
+                            
+                        </span>
                     </div>
                 </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="English" data-aos="fade-up">
-                <div class="card">
-                    <a href="/tothenorth.github.io/2023/01/09/CET6/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/tothenorth.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="CET6">
-                            
-                            <span class="card-title">CET6</span>
-                        </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tothenorth.github.io/tags/Algorithm/">
+                        <span class="chip bg-color">Algorithm</span>
                     </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/tothenorth.github.io/2023/01/10/%E8%AF%97%E6%AD%8C/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/tothenorth.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="诗歌">
+                        
+                        <span class="card-title">诗歌</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-10
                             </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/tothenorth.github.io/categories/English/" class="post-category">
-                                English
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            zlz
+                            
+                        </span>
                     </div>
                 </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tothenorth.github.io/tags/poetry/">
+                        <span class="chip bg-color">poetry</span>
+                    </a>
+                    
+                </div>
+                
             </div>
-            
         </div>
-    </article>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/tothenorth.github.io/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/tothenorth.github.io/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/tothenorth.github.io/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/tothenorth.github.io/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/tothenorth.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
 </main>
 
 

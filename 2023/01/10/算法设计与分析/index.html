@@ -474,11 +474,11 @@
 <hr>
 <h2 id="1-3-算法的数学基础"><a href="#1-3-算法的数学基础" class="headerlink" title="1.3 算法的数学基础"></a>1.3 算法的数学基础</h2><h3 id="1-3-1-函数渐进的界"><a href="#1-3-1-函数渐进的界" class="headerlink" title="1.3.1 函数渐进的界"></a>1.3.1 函数渐进的界</h3><p><strong>定义1.1</strong><br>设 <em>f</em> 和 <em>g</em> 是定义域为自然数集<strong>N</strong>上的函数。  </p>
 <ul>
-<li>若存在正数c和n_0使得对一切n&gt;=$n_0$有0&lt;=<em>f</em>(n)&lt;=c<em>g</em>(n)成立，则称<em>f</em>(n)的渐进上界为<em>g</em>(n),记作<em>f</em>(n)=<em>O</em>(<em>g</em>(n)).</li>
-<li>若存在正数c和n_0使得对一切n&gt;=$n_0$有0&lt;=c<em>g</em>(n)&lt;=<em>f</em>(n)成立，则称<em>f</em>(n)的渐进下界为<em>g</em>(n),记作<em>f</em>(n)=$\Omega$(<em>g</em>(n)).  </li>
-<li>若存在正数c和n_0使得对一切n&gt;=$n_0$有0&lt;=<em>f</em>(n)&lt; c<em>g</em>(n)成立，则称<em>f</em>(n)的渐进上界为<em>g</em>(n),记作<em>f</em>(n)=<em>o</em>(<em>g</em>(n)).  </li>
-<li>若存在正数c和n_0使得对一切n&gt;=$n_0$有0&lt;=c<em>g</em>(n)&lt; <em>f</em>(n)成立，则称<em>f</em>(n)的渐进下界为<em>g</em>(n),记作<em>f</em>(n)=$\omega$(<em>g</em>(n)).</li>
-<li>若<em>f</em>(n)=<em>O</em>(<em>g</em>(n))且<em>f</em>(n)=$\Omega$(<em>g</em>(n)),则记作<em>f</em>(n)=$\Theta$(<em>g</em>(n)).  此时也城<em>g</em>(n)是<em>f</em>(n)的渐进的紧的界，或者称<em>f</em>(n)的阶是<em>g</em>(n).此时<em>f</em>(n)与<em>g</em>(n)的阶相等.   </li>
+<li>若存在正数c和$n_0$使得对一切$n\geq n_0$有$0\leq f(n)\leq cg(n)$成立，则称<em>f</em>(n)的渐进上界为<em>g</em>(n),记作$f(n)=O(g(n))$.</li>
+<li>若存在正数c和$n_0$使得对一切$n\geq n_0$有$0\leq cg(n)\leq f(n)$成立，则称<em>f</em>(n)的渐进下界为<em>g</em>(n),记作$f(n)=\Omega(g(n))$.  </li>
+<li>若存在正数c和$n_0$使得对一切$n\geq n_0$有$0\leq f(n)&lt; cg(n)$成立，则称<em>f</em>(n)的渐进上界为<em>g</em>(n),记作$f(n)=o(g(n))$.  </li>
+<li>若存在正数c和$n_0$使得对一切$n\geq n_0$有$0\leq cg(n)&lt; f(n)$成立，则称<em>f</em>(n)的渐进下界为<em>g</em>(n),记作$f(n)=\omega(g(n))$.</li>
+<li>若$f(n)=O(g(n))$且$f(n)=\Omega(g(n))$,则记作$f(n)=\Theta(g(n))$.  此时也城<em>g</em>(n)是<em>f</em>(n)的渐进的紧的界，或者称<em>f</em>(n)的阶是<em>g</em>(n).此时<em>f</em>(n)与<em>g</em>(n)的阶相等.   </li>
 </ul>
 <p><em>O</em>(1)表示常数函数  </p>
 <p><strong>定理1.1</strong><br>设 <em>f</em> 和 <em>g</em> 是定义域为自然数集<strong>N</strong>上的函数。</p>
@@ -492,7 +492,7 @@
 </ul>
 <p><strong>定理1.2</strong><br>设 <em>f</em> ，<em>g</em> ，<em>h</em> 是定义域为自然数集合的函数，  </p>
 <ul>
-<li>如果 <em>f</em>=<em>O</em>(<em>g</em>)且 <em>g</em>=<em>O</em>(<em>h</em>),那么 <em>f</em>=<em>O</em>(<em>h</em>).</li>
+<li>如果 <em>f</em>=<em>O</em>(<em>g</em>)且 <em>g</em>=<em>O</em>(<em>h</em>),那么 <em>f</em>=$O(h)$.</li>
 <li>如果 <em>f</em>=$\Omega$(<em>g</em>)且 <em>g</em>=$\Omega$(<em>h</em>),那么 <em>f</em>=$\Omega$(<em>h</em>).</li>
 <li>如果 <em>f</em>=$\Theta$(<em>g</em>)且 <em>g</em>=$\Theta$(<em>h</em>),那么 <em>f</em>=$\Theta$(<em>h</em>).  </li>
 </ul>
@@ -509,8 +509,8 @@
 <hr>
 <h4 id="指数函数"><a href="#指数函数" class="headerlink" title="指数函数"></a><strong>指数函数</strong></h4><p><strong>定理1.5</strong><br>对每个<em>r</em>&gt;1和每个<em>d</em>&gt;0,有$n^d$=<em>o</em>($r^n$).  </p>
 <hr>
-<h4 id="阶乘函数"><a href="#阶乘函数" class="headerlink" title="阶乘函数"></a><strong>阶乘函数</strong></h4><p>Stirling公式<br>n!=$\sqrt{2\pi n}$ $(\frac{n}{e})^n$(1+$\Theta(\frac{1}{n})$)  </p>
-<p>关于阶乘函数有下面的结果  </p>
+<h4 id="阶乘函数"><a href="#阶乘函数" class="headerlink" title="阶乘函数"></a><strong>阶乘函数</strong></h4><p>根据Stirling公式  </p>
+<script type="math/tex; mode=display">n!=\sqrt{2\pi n}(\frac{n}{e})^n(1+\Theta(\frac{1}{n}))</script><p>关于阶乘函数有下面的结果  </p>
 <ul>
 <li>n!=<em>o</em>($n^n$) </li>
 <li>n!=$\omega$($2^n$)  </li>
@@ -551,7 +551,8 @@
 </ul>
 <h4 id="递归树"><a href="#递归树" class="headerlink" title="递归树"></a><strong>递归树</strong></h4><p>&emsp;&emsp;递归树是一颗节点带权的二叉树，初始的递归树只有一个节点，权标记为<em>W</em>(n).然后不断进行迭代，直到树中不再含有权为函数的节点位置.迭代过程中，全部节点的权值之和不变，总是等于函数<em>W</em>(n).  </p>
 <p>&emsp;&emsp;估算递推方程解的阶，也可以使用尝试的方法.  </p>
-<p><strong>定理1.6 主定理(MasterTheorem)</strong><br>&emsp;&emsp;设 $a\geq1$ ,$b&gt;1$为常数，<em>f</em>(n)为函数，<em>T</em>(n)为非负整数，且<br>&emsp;&emsp;&emsp;$T(n) = aT(n/b) + f(n)$<br>则有以下结果：  </p>
+<p><strong>定理1.6 主定理(MasterTheorem)</strong><br>&emsp;&emsp;设 $a\geq1$ ,$b&gt;1$为常数，<em>f</em>(n)为函数，<em>T</em>(n)为非负整数，且  </p>
+<script type="math/tex; mode=display">T(n) = aT(n/b) + f(n)</script><p>则有以下结果：  </p>
 <ul>
 <li>若$f(n)=O(n^{log_ba-\varepsilon}),\varepsilon&gt;0,$那么$T(n)=\Theta(n^{log_ba})$  </li>
 <li>若$f(n)=\Theta(n^{log_ba}),$那么$T(n)=\Theta(n^{log_ba}logn)$  </li>

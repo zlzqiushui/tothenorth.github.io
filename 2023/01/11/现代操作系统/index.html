@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签, Hexo">
-    <meta name="description" content="Hexo">
+    <meta name="keywords" content="现代操作系统, Hexo">
+    <meta name="description" content="第一章 引论&amp;emsp;&amp;emsp;现代计算机系统是由多个部件组成的复杂系统。为了管理这些部件并加以优化使用，计算机安装了一层软件，称为操作系统。&amp;emsp;&amp;emsp;操作系统的任务是为用户程序提供一个简单清晰的计算机模型并管理设备。&amp;e">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签 | Hexo</title>
+    <title>现代操作系统 | Hexo</title>
     <link rel="icon" type="image/png" href="/tothenorth.github.io/favicon.png">
     
     <style>
@@ -339,143 +339,474 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                全员非光滑工作室
-                
-            </div>
+    
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/tothenorth.github.io/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: false,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/tothenorth.github.io/medias/featureimages/2.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">现代操作系统</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tothenorth.github.io/tags/OS-CS/">
+                                <span class="chip bg-color">OS CS</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/tothenorth.github.io/categories/Operating-Systems/" class="post-category">
+                                Operating Systems
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-01-11
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="第一章-引论"><a href="#第一章-引论" class="headerlink" title="第一章 引论"></a><strong>第一章 引论</strong></h1><p>&emsp;&emsp;现代计算机系统是由多个部件组成的复杂系统。为了管理这些部件并加以优化使用，计算机安装了一层软件，称为<strong>操作系统</strong>。<br>&emsp;&emsp;操作系统的任务是为用户程序提供一个简单清晰的计算机模型并管理设备。<br>&emsp;&emsp;用户用以与操作系统进行交互的程序基于文本的称为<strong>shell</strong>，基于图标的则称为<strong>图形用户界面</strong>（<em>Graphical User Interface</em>，<strong><em>GUI</em></strong>）。它们实际上不是操作系统的一部分。<br>&emsp;&emsp;多数计算机有两种运行模式：内核态和用户态。</p>
+<ul>
+<li>软件中最基础的部分是操作系统，其运行在内核态，具有对所有硬件的访问权，可以执行所有指令。  </li>
+<li>软件的其余部分运行在用户态，只能执行部分命令。  </li>
+</ul>
+<p>&emsp;&emsp;用户接口程序（shell或者GUI）处于用户态中的最低层次，允许用户允许其他程序。  </p>
+<p>&emsp;&emsp;操作系统和普通软件的区别：</p>
+<ul>
+<li>主要区别：操作系统由硬件保护，防止被修改。但在嵌入式系统或解释系统中上述区别是模糊的。  </li>
+<li>另外，在许多系统中，一些在用户态下运行的程序协助操作系统完成特权功能。  </li>
+<li>操作系统更加大型、复杂和长寿  </li>
+</ul>
+<hr>
+<h2 id="1-1-什么是操作系统"><a href="#1-1-什么是操作系统" class="headerlink" title="1.1 什么是操作系统"></a><strong>1.1 什么是操作系统</strong></h2><h3 id="1-1-1-作为扩展机器的操作系统"><a href="#1-1-1-作为扩展机器的操作系统" class="headerlink" title="1.1.1 作为扩展机器的操作系统"></a><strong>1.1.1 作为扩展机器的操作系统</strong></h3><p>&emsp;&emsp;多数计算机的体系结构（指令集、存储结构、I/O和总线结构）非常原始，编程过于困难。早期程序员用硬盘驱动软件与硬件交互，这类软件提供了读写硬盘块的接口。<br>&emsp;&emsp;操作系统包含很多用于控制输入输出设备的驱动。但这个层面还是太底层了，因此所有操作系统创建了文件这一抽象，便于程序创建读写文件。<br>&emsp;&emsp;抽象是管理复杂性的关键，把一个几乎不可能管理的任务划分为两部分：  </p>
+<ul>
+<li>抽象的定义和实现  </li>
+<li>运用抽象解决问题  </li>
+</ul>
+<p>&emsp;&emsp;操作系统的一个主要任务就是隐藏硬件，呈现给程序良好、清晰、优雅、一致的抽象。应用程序与操作系统及其提供的抽象打交道，用户与用户接口所提供的抽象打交道。  </p>
+<hr>
+<h3 id="1-1-2-作为资源管理者的操作系统"><a href="#1-1-2-作为资源管理者的操作系统" class="headerlink" title="1.1.2 作为资源管理者的操作系统"></a><strong>1.1.2 作为资源管理者的操作系统</strong></h3><p>&emsp;&emsp;<strong>两种观点：</strong></p>
+<ul>
+<li>自顶向下：操作系统向应用程序提供基本抽象的概念。  </li>
+<li>自底向上：操作系统用来管理有关复杂系统的各个部分，在相互竞争的程序之间有序地控制对处理器、存储器以及其他I/O接口设备的分配。  </li>
+</ul>
+<p>&emsp;&emsp;下面介绍自底向上的观点。<br>&emsp;&emsp;现代计算机允许同时在内存中运行多道程序。<br>&emsp;&emsp;当一个计算机有多个用户时，由于用户之间可能会相互干扰，管理和保护存储器、I/O设备以及其他资源的需求变得强烈；除此之外，用户之间还有共享的需求。<br>&emsp;&emsp;操作系统的主要任务是记录哪个程序在使用什么资源，对资源请求进行分配，评估使用代价，并且为不同的程序和用户调节互相冲突的资源请求。<br>&emsp;&emsp;资源管理包括用下面两种方法实现<strong>多路复用</strong>（共享）资源：</p>
+<ul>
+<li>在时间上复用  </li>
+<li>在空间上复用  </li>
+</ul>
+<hr>
+<h2 id="1-2-操作系统的历史"><a href="#1-2-操作系统的历史" class="headerlink" title="1.2 操作系统的历史"></a><strong>1.2 操作系统的历史</strong></h2><p>操作系统与其所运行的计算机体系结构的联系非常密切。  </p>
+<h3 id="1-2-1-第一代-1945-1955-真空管和穿孔卡片"><a href="#1-2-1-第一代-1945-1955-真空管和穿孔卡片" class="headerlink" title="1.2.1 第一代(1945~1955):真空管和穿孔卡片"></a><strong>1.2.1 第一代(1945~1955):真空管和穿孔卡片</strong></h3><p>当时没有操作系统，所有的程序设计用纯粹的机器语言编写，甚至需要通过将上千根电缆接到插件板上连接成电路。<br>50年代出现了穿孔卡片，可以将程序写在卡片上。  </p>
+<h3 id="1-2-2-第二代-1955-1965-晶体管和批处理系统"><a href="#1-2-2-第二代-1955-1965-晶体管和批处理系统" class="headerlink" title="1.2.2 第二代(1955~1965):晶体管和批处理系统"></a><strong>1.2.2 第二代(1955~1965):晶体管和批处理系统</strong></h3>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/tothenorth.github.io/about" rel="external nofollow noreferrer">zlz</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://zlzqiushui.github.io/tothenorth.github.io/tothenorth.github.io/2023/01/11/%E7%8E%B0%E4%BB%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">https://zlzqiushui.github.io/tothenorth.github.io/tothenorth.github.io/2023/01/11/%E7%8E%B0%E4%BB%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/tothenorth.github.io/about" target="_blank">zlz</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tothenorth.github.io/tags/OS-CS/">
+                                    <span class="chip bg-color">OS CS</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/tothenorth.github.io/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/tothenorth.github.io/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/tothenorth.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/tothenorth.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/tothenorth.github.io/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $(function () {
+        $('.tabs').tabs();
+    });
 </script>
 
-
+            
+        </div>
     </div>
-</div>
-
-<main class="content">
 
     
 
-<div id="tags" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
-            <div class="tag-chips">
-                
-                
-                <a href="/tothenorth.github.io/tags/English/" title="English: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="English" style="background-color: #F9EBEA;">English
-                        <span class="tag-length">2</span>
-                    </span>
+            <div class="card">
+                <a href="/tothenorth.github.io/2023/01/11/%E7%8E%B0%E4%BB%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/tothenorth.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="现代操作系统">
+                        
+                        <span class="card-title">现代操作系统</span>
+                    </div>
                 </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/tothenorth.github.io/categories/Operating-Systems/" class="post-category">
+                                    Operating Systems
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
                 
-                
-                <a href="/tothenorth.github.io/tags/Algorithm/" title="Algorithm: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Algorithm" style="background-color: #F5EEF8;">Algorithm
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tothenorth.github.io/tags/poetry/" title="poetry: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="poetry" style="background-color: #D5F5E3;">poetry
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tothenorth.github.io/tags/OS-CS/" title="OS CS: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="OS CS" style="background-color: #E8F8F5;">OS CS
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tothenorth.github.io/tags/%E8%AF%AD%E8%A8%80%E5%AD%A6-%E6%B1%89%E8%AF%AD%E8%A8%80/" title="语言学 汉语言: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="语言学 汉语言" style="background-color: #FEF9E7;">语言学 汉语言
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
+                <div class="card-action article-tags">
+                    
+                    <a href="/tothenorth.github.io/tags/OS-CS/">
+                        <span class="chip bg-color">OS CS</span>
+                    </a>
+                    
+                </div>
                 
             </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/tothenorth.github.io/2023/01/11/%E8%AF%AD%E8%A8%80%E5%AD%A6%E7%BA%B2%E8%A6%81/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/tothenorth.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="语言学纲要">
+                        
+                        <span class="card-title">语言学纲要</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/tothenorth.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6/" class="post-category">
+                                    语言学
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tothenorth.github.io/tags/%E8%AF%AD%E8%A8%80%E5%AD%A6-%E6%B1%89%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">语言学 汉语言</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/tothenorth.github.io/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/tothenorth.github.io/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/tothenorth.github.io/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/tothenorth.github.io/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
         </div>
     </div>
 </div>
 
-    
-    <link rel="stylesheet" type="text/css" href="/tothenorth.github.io/libs/jqcloud/jqcloud.css">
-<style type="text/css">
-    #tag-wordcloud {
-        width: 100%;
-        height: 300px;
-    }
-</style>
+<!-- TOC 悬浮按钮. -->
 
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="tag-wordcloud" class="card-content"></div>
-    </div>
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
 </div>
 
-<script type="text/javascript" src="/tothenorth.github.io/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
-<script type="text/javascript">
-    
 
-    $('#tag-wordcloud').jQCloud([{"text":"English","weight":2,"link":"/tothenorth.github.io/tags/English/"},{"text":"Algorithm","weight":1,"link":"/tothenorth.github.io/tags/Algorithm/"},{"text":"poetry","weight":1,"link":"/tothenorth.github.io/tags/poetry/"},{"text":"OS CS","weight":1,"link":"/tothenorth.github.io/tags/OS-CS/"},{"text":"语言学 汉语言","weight":1,"link":"/tothenorth.github.io/tags/语言学-汉语言/"}], {
-        autoResize: true
+<script src="/tothenorth.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
     });
 </script>
 
     
 
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
